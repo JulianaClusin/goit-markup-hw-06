@@ -906,13 +906,15 @@ color: var(--text-main-color);
   border: 1px solid rgba(75, 75, 75, 20%) ;
   border-radius: 4px;
   background-color: transparent;
+  padding-top: 12px;
+  padding-left: 16px;
 }
 
 .modal-form-message:focus::placeholder {
   color: var(--accent-color);
 }
 
-.modal-form-message::placeholder {
+.modal-form-message:not(:placeholder-shown) {
   padding-top: 12px;
   padding-left: 16px;
 }
