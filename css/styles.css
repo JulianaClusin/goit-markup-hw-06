@@ -688,10 +688,16 @@ background-color:var(--accent-color);
       
 .footer-subscribe-button{
   margin-left:12px;fill:#fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-button svg{
   margin-left:10px;
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: var(--modal-btn-theme-color);
 }
 
 /* PORTFOLIO */
